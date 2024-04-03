@@ -62,6 +62,10 @@ export class RunnerService {
     return this.http.put<any>(`${this.apiUrl}/${runner.id}`, runner);
   }
 
+  deleteRunner(id: number): Observable<any> {
+    return this.http.delete<any>(`${this.apiUrl}/${id}`);
+  }
+
 
   /**
     * Recupera uma lista de usuários da API.
