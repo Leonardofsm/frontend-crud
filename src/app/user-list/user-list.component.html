@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let user of usuarios">
+    {{ user.name }} - {{ user.email }} - {{ user.age }} - {{ user.phone }}
+  </li>
+</ul>
+
+<button (click)="exportToExcel()">Export to Excel</button>
